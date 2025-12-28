@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "embroidery"
+version = "0.1.0"
+description = ""
+authors = ["Claire Durand <claire.a.durand@gmail.com>"]
+packages = [{ include = "embroidery" }, { include = "database" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlalchemy = "^2.0.44"
+psycopg2 = "^2.9.11"
+pydantic = "^2.12.3"
+alembic = "^1.17.1"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
